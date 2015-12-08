@@ -93,7 +93,7 @@
             self.rooms = tempArray;
         }
         [self.collectionView reloadData];
-        [self.collectionView.header endRefreshing];
+        [self.collectionView.mj_header endRefreshing];
     } failure:^(NSError *error) {
         DYLog(@"%s %@", __FUNCTION__, error);
     }];

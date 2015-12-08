@@ -121,7 +121,7 @@
             self.progressView.hidden = YES;
         }];
         [self.tableView reloadData];
-        [self.tableView.header endRefreshing];
+        [self.tableView.mj_header endRefreshing];
     } failure:^(NSError *error) {
         DYLog(@"_DYData加载失败,%@", error);
     }];
