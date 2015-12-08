@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="sectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SyW-ch-ZkR">
+                    <rect key="frame" x="8" y="7" width="5" height="30"/>
+                    <animations/>
+                    <color key="backgroundColor" red="1" green="0.62078006669999997" blue="0.39487974139999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="qw6-Mf-QsY"/>
+                        <constraint firstAttribute="width" constant="5" id="xMn-Af-g4n"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="竞技游戏" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTL-zv-121">
+                    <rect key="frame" x="21" y="11" width="68" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="F8h-ho-qGH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_more.png" translatesAutoresizingMaskIntoConstraints="NO" id="6gJ-g9-b7e">
+                    <rect key="frame" x="287" y="10" width="25" height="24"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="b2p-lg-mDA"/>
+                        <constraint firstAttribute="width" constant="25" id="unO-Qq-ihx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更多" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHx-4j-Sj3">
+                    <rect key="frame" x="256" y="11" width="26" height="21"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="g5S-hT-ZeH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6gJ-g9-b7e" firstAttribute="leading" secondItem="EHx-4j-Sj3" secondAttribute="trailing" constant="5" id="0pK-sq-lNC"/>
+                <constraint firstItem="6gJ-g9-b7e" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="7ir-iI-xYI"/>
+                <constraint firstAttribute="trailing" secondItem="6gJ-g9-b7e" secondAttribute="trailing" constant="8" id="Axi-5S-85P"/>
+                <constraint firstItem="SyW-ch-ZkR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Bbp-VT-fgc"/>
+                <constraint firstItem="lTL-zv-121" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="K80-Hm-NBL"/>
+                <constraint firstItem="lTL-zv-121" firstAttribute="leading" secondItem="SyW-ch-ZkR" secondAttribute="trailing" constant="8" id="U4a-sV-XhP"/>
+                <constraint firstItem="SyW-ch-ZkR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="qgb-7w-KyN"/>
+                <constraint firstItem="EHx-4j-Sj3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tPX-xl-W8v"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lineView" destination="SyW-ch-ZkR" id="eMn-QK-1Xa"/>
+                <outlet property="moreImageView" destination="6gJ-g9-b7e" id="Tyj-2q-a66"/>
+                <outlet property="moreLabel" destination="EHx-4j-Sj3" id="cdz-r9-Z79"/>
+                <outlet property="titleLabel" destination="lTL-zv-121" id="SlK-qH-m6B"/>
+            </connections>
+            <point key="canvasLocation" x="354" y="252"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_more.png" width="14" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColumnCollectionViewCell" id="gTV-IL-0wX" customClass="ColumnCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="223"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="223"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pam-EP-6eY">
+                        <rect key="frame" x="0.0" y="0.0" width="145" height="203"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="魔兽争霸" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2b-4O-7Iv">
+                        <rect key="frame" x="0.0" y="203" width="145" height="20"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="pam-EP-6eY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="EaK-x6-2TY"/>
+                <constraint firstAttribute="trailing" secondItem="pam-EP-6eY" secondAttribute="trailing" id="KUV-st-cRu"/>
+                <constraint firstItem="pam-EP-6eY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VXX-sj-3ND"/>
+                <constraint firstAttribute="trailing" secondItem="G2b-4O-7Iv" secondAttribute="trailing" id="Xa4-60-d7d"/>
+                <constraint firstItem="G2b-4O-7Iv" firstAttribute="top" secondItem="pam-EP-6eY" secondAttribute="bottom" id="dvX-hK-Qt7"/>
+                <constraint firstAttribute="bottom" secondItem="pam-EP-6eY" secondAttribute="bottom" constant="20" id="fZz-xU-8h4"/>
+                <constraint firstAttribute="bottom" secondItem="G2b-4O-7Iv" secondAttribute="bottom" id="kCb-ip-xdy"/>
+                <constraint firstItem="G2b-4O-7Iv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ps5-Rg-ndK"/>
+            </constraints>
+            <size key="customSize" width="145" height="223"/>
+            <connections>
+                <outlet property="imageView" destination="pam-EP-6eY" id="Ctp-V0-0NE"/>
+                <outlet property="nameLabel" destination="G2b-4O-7Iv" id="N2J-SW-yfu"/>
+            </connections>
+            <point key="canvasLocation" x="237.5" y="187.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
